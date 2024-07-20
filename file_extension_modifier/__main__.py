@@ -13,7 +13,7 @@ def fileModification(directory, oldExtension, newExtension):
 		filePath = os.path.join(directory, fileName)
 		newFileName = fileName[:-len(oldExtension)] + newExtension
 		newFilePath = os.path.join(directory, newFileName)
-		if fileName == "main.py":
+		if fileName == "__main__.py":
 			print(colourOrange + "Skipped modifying main.py")
 		elif os.path.isdir(filePath) or os.path.islink(filePath):
 			print(colourOrange + "Skipped modifying subdirectory")
@@ -29,9 +29,13 @@ def fileModification(directory, oldExtension, newExtension):
 	elapsedTime = endTime - startTime
 	print(colourWhite + "Modified " + str(filesModified) + " file extensions in " + str(elapsedTime) + " seconds")
 
-print("Welcome to File-Extension-Modifier by Dan-Foord")
-inputDirectory = input("Please enter the path of the directory in which you would like to modify the file extensions")
-inputOldExtension = input("Please enter the file extension that you would like to change from")
-inputNewExtension = input("Please enter the file extension that you would like to change to")
-input("Changing files in " + inputDirectory + " from " + inputOldExtension + " to " + inputNewExtension + ". Press any key to continue.")
-fileModification(inputDirectory, inputOldExtension, inputNewExtension)
+def main():
+	print("Welcome to File-Extension-Modifier by Dan-Foord")
+	inputDirectory = input("Please enter the path of the directory in which you would like to modify the file extensions")
+	inputOldExtension = input("Please enter the file extension that you would like to change from")
+	inputNewExtension = input("Please enter the file extension that you would like to change to")
+	input("Changing files in " + inputDirectory + " from " + inputOldExtension + " to " + inputNewExtension + ". Press enter to continue.")
+	fileModification(inputDirectory, inputOldExtension, inputNewExtension)
+
+if __name__ == "__main__":
+    main()

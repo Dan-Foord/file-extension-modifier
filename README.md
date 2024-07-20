@@ -10,13 +10,21 @@ To run script from the python3 command line interface without installing, follow
 
 ```shell
 git clone https://github.com/Dan-Foord/file-extension-modifier.git
-cd file-extension-modifier
-python3 main.py
+cd file-extension-modifier/file_extension_modifier
+python3 __main__.py
 ```
 
 ## Installation (optional)
 
-Coming soon.
+Python and pip must be installed in order to install the package.
+
+To install the package using pip, ensure that the pip Scripts directory is in the PATH environment variable. Then follow the instructions below:
+
+```shell
+git clone https://github.com/Dan-Foord/file-extension-modifier.git # If you haven't already
+cd file-extension-modifier/
+pip install .
+```
 
 ## Contributing
 
