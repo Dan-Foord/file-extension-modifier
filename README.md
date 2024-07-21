@@ -42,7 +42,7 @@ Next, depending on your operating system, follow the instructions to add this lo
 
 #### On macOS/Linux
 
-**If you are using macOS, replace "~/.bashrc" with "~/.zshrc" in the following instructions.**
+**If you are using macOS, replace `~/.bashrc` with `~/.zshrc` in the following instructions.**
 
 Open your shell configuration file:
 
@@ -64,7 +64,7 @@ source ~/.bashrc # Replace with ~/.zshrc for macOS
 
 #### On Windows
 
-Please follow the advice given on the following Stack Overflow thread:
+Please follow the advice given in the following Stack Overflow thread:
 
 https://stackoverflow.com/questions/61494374/how-do-i-run-a-program-installed-with-pip-in-windows/61494919
 
