@@ -14,7 +14,7 @@ def fileModification(directory, oldExtension, newExtension):
 		newFileName = fileName[:-len(oldExtension)] + newExtension
 		newFilePath = os.path.join(directory, newFileName)
 		if fileName == "__main__.py":
-			print(colourOrange + "Skipped modifying main.py")
+			print(colourOrange + "Skipped modifying __main__.py")
 		elif os.path.isdir(filePath) or os.path.islink(filePath):
 			print(colourOrange + "Skipped modifying subdirectory")
 		elif os.path.isfile(newFilePath):
