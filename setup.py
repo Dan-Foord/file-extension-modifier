@@ -3,7 +3,7 @@ import os
 
 setup(
     name='file-extension-modifier',
-    version='0.1.1', # Remember to increment in __init__.py
+    version='0.2.0', # Remember to increment in __init__.py
     description='A user-friendly Python script for batch-modifying file extensions in a given directory.',
     long_description=open('README.md').read() if os.path.exists('README.md') else '',
     url='https://github.com/Dan-Foord/file-extension-modifier',
