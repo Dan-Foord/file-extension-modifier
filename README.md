@@ -24,12 +24,13 @@ To install the package using pip, follow the instructions below:
 git clone https://github.com/Dan-Foord/file-extension-modifier.git # If you haven't already
 cd file-extension-modifier/
 pip install .
-file-extension-modifier
 ```
+
+Now you should be able to run the script at any time by entering `file-extension-modifier` into the CLI.
 
 ### Adding directory to PATH
 
-If you have problems running the command after installing, please put the location that the script is installed to in your PATH environment variable.
+If you have problems running the command after installing, use the following instructions to put the location that the script is installed to in your PATH environment variable.
 
 Firstly, find the location of where the package is installed:
 
