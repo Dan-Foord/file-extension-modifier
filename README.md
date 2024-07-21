@@ -18,13 +18,55 @@ python3 __main__.py
 
 Python and pip must be installed in order to install the package.
 
-To install the package using pip, ensure that the pip Scripts directory is in the PATH environment variable. Then follow the instructions below:
+To install the package using pip, follow the instructions below:
 
 ```shell
 git clone https://github.com/Dan-Foord/file-extension-modifier.git # If you haven't already
 cd file-extension-modifier/
 pip install .
+file-extension-modifier
 ```
+
+### Adding directory to PATH
+
+If you have problems running the command after installing, please put the location that the script is installed to in your PATH environment variable.
+
+Firstly, find the location of where the package is installed:
+
+```shell
+pip show file-extension-modifier
+> Location: <location-of-script> # Copy this path
+```
+
+Next, depending on your operating system, follow the instructions to add this location to your PATH environment variable.
+
+#### On macOS/Linux
+
+**If you are using macOS, replace "~/.bashrc" with "~/.zshrc" in the following instructions.**
+
+Open your shell configuration file:
+
+```shell
+nano ~/.bashrc # Replace with ~/.zshrc for macOS
+```
+
+Add the following line to the bottom of the file, replacing `<location-of-script>` with the path you obtained earlier:
+
+```bash
+export PATH="$PATH:<location-of-script>"
+```
+
+Reload your shell configuration settings:
+
+```bash
+source ~/.bashrc # Replace with ~/.zshrc for macOS
+```
+
+#### On Windows
+
+Please follow the advice given on the following Stack Overflow thread:
+
+https://stackoverflow.com/questions/61494374/how-do-i-run-a-program-installed-with-pip-in-windows/61494919
 
 ## Contributing
 
