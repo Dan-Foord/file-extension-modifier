@@ -14,6 +14,8 @@ cd file-extension-modifier/file_extension_modifier
 python3 __main__.py
 ```
 
+The `__main__.py` file can optionally be moved to any directory and executed from that directory in order to easily modify files in that directory.
+
 ## Installation (optional)
 
 Python and pip must be installed in order to install the package.
