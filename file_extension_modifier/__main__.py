@@ -90,8 +90,8 @@ def main():
 		elif inputOldExtension == "":
 			break
 		else:
-			print("Invalid file extension, please try again")
 			clearScreen()
+			print("Invalid file extension, please try again")
 	
 	clearScreen()
 	
@@ -102,8 +102,8 @@ def main():
 		elif inputNewExtension == "":
 			break
 		else:
-			print("Invalid file extension, please try again")
 			clearScreen()
+			print("Invalid file extension, please try again")
 	
 	clearScreen()
 
